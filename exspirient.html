@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Фон с изображением</title>
+    <style>
+        body {
+            margin: 0;
+            background-image: url('photo/page1.png');
+            background-size: cover; /* Заполняет фон, сохраняя пропорции изображения */
+            background-position: center; /* Центрирует изображение */
+            background-repeat: no-repeat; /* Не повторяет изображение */
+            height: 100vh; /* Задает высоту в 100% от высоты окна просмотра */
+        }
+
+        .content {
+            min-height: 100vh; /* Устанавливает минимальную высоту для текстового блока */
+            position: relative; /* Позиционирует текст относительно родителя */
+            z-index: 1; /* Обеспечивает, что текст будет выше фона */
+            background-color: rgba(255, 255, 255, 0.8); /* Полупрозрачный фон для текста (по желанию) */
+            padding: 20px; /* Отступы для текста */
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+    </style>
+</head>
+<body>
+    <div class="content">
+        <h1>Заголовок</h1>
+        <p>Это пример текста на фоне изображения. Фон остается фиксированным, независимо от количества текста.</p>
+        <p>Добавьте больше текста, чтобы увидеть, как фон остается на месте.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur vel neque id libero dignissim viverra.</p>
+        <p>...</p> <!-- Добавьте больше текста, если необходимо -->
+    </div>
+</body>
+</html>

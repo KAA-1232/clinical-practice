@@ -1,0 +1,284 @@
+body{
+    font-family: "Montserrat", serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header{
+    padding: 0.5% 13%;
+    text-align: center;
+    position: sticky;
+    background: #fff;
+}
+
+.haeder-top{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: 1rem auto;
+}
+
+.icon img {
+    width: 189px;
+    height: 64.02px;
+    margin-right: 7% ;
+}
+
+
+.navigation{
+    margin: 0 50%;
+}
+
+.navigation ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+.navigation ul li {
+    margin: 0 2rem;
+}
+
+.navigation ul li a {
+    text-decoration: none;
+    color: #000;
+    transition:  color 0.3s ;
+}
+
+.navigation ul li a:hover{
+    color: rgba(147, 182, 216, 1);
+}
+
+
+
+.page1{
+    margin: 0;
+    background-image: url('photo/page1.png');
+    background-size: cover; /* Заполняет фон, сохраняя пропорции изображения */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Не повторяет изображение */
+    height: 100vh; /* Задает высоту в 100% от высоты окна просмотра */
+}
+
+.page1 .head1{
+    padding: 11% 13%;
+    position: sticky;
+}
+
+.page1 .head1 .heading-page1{
+    color: #FFF;
+    min-height: 100vh; /* Устанавливает минимальную высоту для текстового блока */
+    position: relative; /* Позиционирует текст относительно родителя */
+    z-index: 1; /* Обеспечивает, что текст будет выше фона */
+    padding: 20px; /* Отступы для текста */
+}
+
+.page1 .head1 .heading-page1 h1 {
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    margin: 2px 0;
+}
+
+.page2{
+    padding: 0.5% 13%;
+    background: #fff;
+}
+
+.page2 .heading-page2 h1 {
+    text-align: center;
+    font-weight: 700;
+    font-size: 50px;
+    line-height: 1.2;
+    margin-top: 6rem;
+    margin-bottom: 2rem;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+.carts{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem; 
+}
+.carts .cart1{
+    margin: 4rem 0rem;
+    padding: 2rem 0.5rem;
+    width: 100%;
+    height: 21rem;
+    background-color: rgb(226, 226, 226);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.carts .cart1 .image-cart{
+    text-align: center;
+}
+
+.carts .cart1 .text-cart{
+    margin: auto;
+}
+
+.page3{
+    background-color: rgba(147, 182, 216, 1);
+    color: #fff;
+    line-height: 1.2;
+}
+
+.page3 .granica {
+    padding: 0.5% 13%;
+}
+
+.page3 .granica .img3{
+    margin-top: 70px;
+    margin-bottom: 10px;
+}
+
+.page3 .granica .img3 img {
+    height: 174px;
+    width:174px ;
+}
+
+.page3 .granica .heading-page3{
+    color: #fff;
+    line-height: 1.2;
+}
+
+.page3 .granica .heading-page3 h1 {
+    font-weight: 700;
+    margin-bottom: 4rem;
+}
+
+.page3 .granica .heading-page3 p {
+    margin-bottom: 70px;
+}
+
+.page4{
+    background-color: rgb(255, 255, 255);
+    color: #000000;
+    line-height: 1.6;
+}
+
+.page4 .heading-page4{
+    padding: 0.5% 13%;
+    display: flex;
+    align-items: center;
+}
+
+.page4 .heading-page4 ul{
+    list-style-type: disc;
+    padding-left: 20px;
+    color: #000000;
+    line-height: 1.6;
+    margin-top: 4rem;
+}
+
+.page4 .heading-page4 ul li {
+    font-weight: 600;
+    line-height: 1.6;
+    margin-bottom: 1rem
+}
+
+.page4 .heading-page4 ul li .osob{
+    margin-bottom: 2rem;
+}
+
+.page4 .heading-page4 img{
+    width: 849px;
+    height: 569px;
+    margin-left:10rem ;
+}
+ 
+.page5{
+    margin: 0;
+    background-image: url('photo/page5.png');
+    background-size: cover; /* Заполняет фон, сохраняя пропорции изображения */
+    background-position: center; /* Центрирует изображение */
+    background-repeat: no-repeat; /* Не повторяет изображение */
+    height:100%; /* Задает высоту в 100% от высоты окна просмотра */
+}
+
+.page5 .obh {
+    height: 475px;
+    padding: 0.5% 13%;;
+}
+
+.page5 .obh .user{
+    padding-top: 270px;
+}
+
+.page5 .obh .user .predlojenie p {
+    font-weight: 700;
+}
+
+.page5 .obh .user .infa input{
+    border: 2px solid #fff;
+    border-radius: 20px;
+    box-sizing: border-box;
+    padding: 5px 38px;
+    font-size: 16px;
+}
+
+.page5 .obh .user .infa input:focus{
+    border-color: aliceblue;
+    outline: none;
+}
+
+.page5 .obh .user .infa button{
+    background-color: rgba(241, 154, 14, 1);
+    border-radius: 20px;
+    border: none ;
+    padding: 10px 28px;
+    text-align: center;
+    margin: 1.5rem ;
+    cursor: pointer;
+}
+
+.page5 .obh .user .infa button:hover{
+    background-color: rgb(255, 238, 1);
+}
+
+.page5 .obh .user .infa button:active{
+    transform: translateY(2px);
+}
+
+footer{
+    background-color: #2e2e2e;
+} 
+footer .footer{
+    height: 275px;
+    padding: 0.5% 13%;;
+    text-align: center;
+    font-weight: 700;
+    font-size: small;
+}
+
+footer .footer p {
+    margin: 5rem;
+    color: #FFF;
+}
+
+
+
+@media (max-width: 768px){
+    .carts{
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 375px){
+    .carts{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    
+}
+
